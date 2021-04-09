@@ -1,6 +1,8 @@
-# This is for All Code
+# This is for All VSCode
 .vscode/*
 
+
+# This is for CUDA. 
 
 # This is for C++. 
 
