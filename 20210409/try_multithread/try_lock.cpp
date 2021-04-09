@@ -6,7 +6,7 @@ using namespace std;
 
 void PrintFirst(void)
 {
-    
+	cout << "First" << endl;
 }
 
 int main(void)
