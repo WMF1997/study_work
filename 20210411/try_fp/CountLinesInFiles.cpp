@@ -26,7 +26,7 @@ std::vector<int> CountLinesInFiles(const std::vector<std::string>& Files)
 
 int CountLines(const std::string& FileName)
 {
-    std::ifstream In;
+    std::ifstream In(FileName);
     return std::count( 
         std::istreambuf_iterator<char>(In), 
         std::istreambuf_iterator<char>(), 
@@ -54,10 +54,10 @@ std::vector<int> CountLinesInFiles_FP_2(const std::vector<std::string>& Files)
     return Results;
 }
 
-std::vector<int> CountLinesInFiles_FP_3(const std::vector<std::string>& Files)
-{
-    return Files | std::transform(CountLines);
-}
+// std::vector<int> CountLinesInFiles_FP_3(const std::vector<std::string>& Files)
+// {
+//     return Files | std::transform(CountLines);
+// }
 
 int main(void)
 {
